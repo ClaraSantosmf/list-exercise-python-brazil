@@ -6,7 +6,7 @@ Faça um Programa que peça os 3 lados de um triângulo. O programa deverá info
 Dicas:
 Três lados formam um triângulo quando a soma de quaisquer dois lados for maior que o terceiro;
 Triângulo Equilátero: três lados iguais;
-Triângulo Isósceles: quaisquer dois lados iguais;
+Triângulo Isósceles: quaisquer dois lados iguais;gi
 Triângulo Escaleno: três lados diferentes;
 
     >>> classificar_triangulo(2, 3, 4)
@@ -27,3 +27,11 @@ Triângulo Escaleno: três lados diferentes;
 
 def classificar_triangulo(lado_a: float, lado_b: float, lado_c: float):
     """Escreva aqui em baixo a sua solução"""
+    if (lado_a + lado_b) < lado_c or (lado_a + lado_c) < lado_b or (lado_b + lado_c) < lado_a:
+        return 'Não é um triângulo'
+    elif (lado_a == lado_b) and (lado_b == lado_c):
+        print("'Triângulo Equilátero'")
+    elif ((lado_c != lado_b) and (lado_a != lado_b) and (lado_a != lado_c)):
+            print("'Triângulo Escaleno'")
+    else:
+        print("'Triângulo Isósceles'")
