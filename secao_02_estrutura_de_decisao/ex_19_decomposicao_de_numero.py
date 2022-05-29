@@ -100,3 +100,4 @@ def decompor_numero(numero: int):
                 print(f"'{numero} = {centenas} e {dezenas}{unidade}'")
         elif partes_numericas == 3:
             print(f"'{numero} = {centenas}, {dezenas} e {unidade}'")
+
