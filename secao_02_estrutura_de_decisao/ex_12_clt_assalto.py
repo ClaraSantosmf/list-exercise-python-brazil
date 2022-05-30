@@ -68,6 +68,7 @@ def calcular_salario_liquido(valor_hora: float, horas_trabalhadas: int):
         irf = ("20%")
 
     imposto_renda = sal_bruto * ir
+    imposto_r = '{:.2f}'.format(imposto_renda)
     sindicato = sal_bruto * 0.03
     sindicato1 = '{:.2f}'.format(sindicato)
     fgts = sal_bruto * 0.11
@@ -79,14 +80,20 @@ def calcular_salario_liquido(valor_hora: float, horas_trabalhadas: int):
     sal_liquido = sal_bruto - descontos
     salario_liquido = '{:.2f}'.format(sal_liquido)
     sal_bruto = '{:.2f}'.format(sal_bruto)
-    imposto_renda = '{:.2f}'.format(imposto_renda)
-    print(f"Salário Bruto: (R$ {valor_hora:.2f} * {horas_trabalhadas})      : R$ {' ' * (7 - len(sal_bruto)) + sal_bruto}")
-    print(f"(-) IR ({irf})                       : R$ {' ' * (8 - len(imposto_renda)) + imposto_renda}")
+    print(f"Salário Bruto: (R$ {valor_hora:.2f} * {horas_trabalhadas})     : R$ {' ' * (8 - len(sal_bruto)) + sal_bruto}")
+    print(f"(-) IR ({irf})                        : R$ {' ' * (8 - len(imposto_r)) + imposto_r}")
     print(f"(-) INSS (10%)                     : R$ {' ' * (8 - len(inss1)) + inss1}")
     print(f"(-) Sindicato (3%)                 : R$ {' ' * (8 - len(sindicato1)) + sindicato1}")
     print(f"FGTS (11%)                         : R$ {' '* (8 - len(fgts1)) + fgts1}")
     print(f"Total de descontos                 : R$ {' '* (8 - len(descontos_totais)) + descontos_totais}")
     print(f"Salário Liquido                    : R$ {' '* (8 - len(salario_liquido)) + salario_liquido}")
 
-    print(f"Salário Liquido                    : R$ {' ' * (8 - len(salario_liquido)) + salario_liquido}")
+
+    print(f"Salário Bruto: (R$ {valor_hora:.2f} * {horas_trabalhadas})     : R$ {}")
+    print(f"(-) IR ({irf})                        : R$ {' ' * (8 - len(imposto_r)) + imposto_r}")
+    print(f"(-) INSS (10%)                     : R$ {' ' * (8 - len(inss1)) + inss1}")
+    print(f"(-) Sindicato (3%)                 : R$ {' ' * (8 - len(sindicato1)) + sindicato1}")
+    print(f"FGTS (11%)                         : R$ {' '* (8 - len(fgts1)) + fgts1}")
+    print(f"Total de descontos                 : R$ {' '* (8 - len(descontos_totais)) + descontos_totais}")
+    print(f"Salário Liquido                    : R$ {' '* (8 - len(salario_liquido)) + salario_liquido}")
 
