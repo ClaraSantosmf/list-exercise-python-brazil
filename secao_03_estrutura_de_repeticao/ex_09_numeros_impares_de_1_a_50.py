@@ -20,4 +20,4 @@ def calcular_numeros_impares_de_1_a_50() -> str:
             lista_impar.append(i)
         else:
             pass
-    return ', '.join(map(str, lista_impar))
+    return f"{', '.join(map(str, lista_impar))}"
