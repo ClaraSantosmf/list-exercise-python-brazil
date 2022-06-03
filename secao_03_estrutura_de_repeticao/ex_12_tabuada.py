@@ -129,4 +129,3 @@ def gerar_tabuada(n: int) -> str:
     else:
         for i in range(1,11):
             print(f"{n} X {i} = {n*i}")
-
