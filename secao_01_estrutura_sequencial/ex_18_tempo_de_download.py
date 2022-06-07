@@ -21,8 +21,3 @@ Arredonde o tempo em minutos
 
 def calcular_tempo_de_download():
     """Escreva aqui em baixo a sua solução"""
-    megabytes = int(input("Insira MegaBytes do arquivo"))
-    MegabitPS = int(input("Velocidades da internet em Mbps"))
-    donwload = (megabytes*8)/MegabitPS
-    tempo = donwload/60
-    print(f"O tempo aproximado do Download é: {round(tempo)} minuto(s)")
