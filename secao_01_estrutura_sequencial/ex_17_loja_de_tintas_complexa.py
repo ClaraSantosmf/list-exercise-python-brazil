@@ -27,23 +27,6 @@ Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, consid
 
 """
 
-from math import ceil, floor
 
 def calcular_latas_e_preco_de_tinta():
     """Escreva aqui em baixo a sua solução"""
-    area_quadrada = float(input("Diga a área a ser pintada em metros quadrados?"))
-    cobertura_em_metro_por_litro = 6
-    volume_da_lata = 18
-    volume_do_galao = 3.6
-    preco_da_lata = 80
-    preco_do_galao = 25
-    litros_necessarios = ceil((area_quadrada/cobertura_em_metro_por_litro) * 1.1)
-
-    latas_necessarias = ceil(litros_necessarios/volume_da_lata)
-    galoes_necessarios = ceil(litros_necessarios/volume_do_galao)
-    latitas = floor(litros_necessarios/volume_da_lata)
-    galonzitos = ceil(((litros_necessarios - latitas * volume_da_lata)/volume_do_galao))
-    print(f'Você deve comprar {litros_necessarios} litros de tinta.')
-    print(f'Você pode comprar {latas_necessarias} lata(s) de 18 litros a um custo de R$ {latas_necessarias*preco_da_lata}. Vão sobrar {(latas_necessarias * volume_da_lata) - litros_necessarios:.1f} litro(s) de tinta.')
-    print(f'Você pode comprar {galoes_necessarios} lata(s) de 3.6 litros a um custo de R$ {galoes_necessarios*preco_do_galao}. Vão sobrar {(galoes_necessarios * volume_do_galao) - litros_necessarios:.1f} litro(s) de tinta.')
-    print(f'Para menor custo, você pode comprar {latitas} lata(s) de 18 litros e {galonzitos} galão(ões) de 3.6 litros a um custo de R$ {latitas*preco_da_lata + galonzitos * preco_do_galao}. Vão sobrar {((latitas*volume_da_lata) + (galonzitos * volume_do_galao)) - litros_necessarios:.1f} litro(s) de tinta.')
