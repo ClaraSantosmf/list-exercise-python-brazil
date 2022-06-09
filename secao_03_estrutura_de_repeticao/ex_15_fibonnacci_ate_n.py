@@ -32,7 +32,7 @@ def calcular_serie_de_fibonacci(n: int) -> str:
             fi = (lista_de_fi[-1] + lista_de_fi[-2])
             lista_de_fi.append(fi)
         return ', '.join(map(str, lista_de_fi))
-    else:
-        return f'{n}'
+
+    return f'{n}'
 
 
