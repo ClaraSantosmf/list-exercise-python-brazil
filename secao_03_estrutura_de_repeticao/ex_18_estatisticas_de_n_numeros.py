@@ -20,10 +20,10 @@ def calcular_estatisticas(*numeros) -> str:
     """Escreva aqui em baixo a sua solução"""
     if len(numeros) == 0:
         return 'Maior valor: não existe. Menor valor: não existe. Soma: 0'
-    else:
-        listinha = sorted(numeros)
-        soma = sum(listinha)
-        return f'Maior valor: {listinha[-1]}. Menor valor: {listinha[0]}. Soma: {soma}'
+
+    listinha = sorted(numeros)
+    soma = sum(listinha)
+    return f'Maior valor: {listinha[-1]}. Menor valor: {listinha[0]}. Soma: {soma}'
 
 
 
