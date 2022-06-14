@@ -41,3 +41,4 @@ def calcular_baixinhos_com_mais_de_13_anos(*alunos):
     """Escreva aqui em baixo a sua solução"""
 
 
+k
