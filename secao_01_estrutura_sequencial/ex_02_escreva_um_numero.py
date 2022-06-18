@@ -15,6 +15,3 @@ def escreva_um_numero():
     """Escreva aqui em baixo a sua solução"""
     a = int(input('Diz um número'))
     print('O número informado foi', a)
-
-if __name__ == '__main__':
-    escreva_um_numero()
