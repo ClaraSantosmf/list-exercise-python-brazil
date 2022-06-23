@@ -21,3 +21,17 @@ As duas strings possuem conteúdo diferente.
 
 def comparar(s1: str, s2: str):
     """Escreva aqui em baixo a sua solução"""
+    tamanho_de_s1 = len(s1)
+    tamanho_de_s2 = len(s2)
+    print(f"String 1: {s1}")
+    print(f"String 2: {s2}")
+    print(f'Tamanho de "{s1}": {tamanho_de_s1} caracteres')
+    print(f'Tamanho de "{s2}": {tamanho_de_s2} caracteres')
+    if tamanho_de_s1 != tamanho_de_s2:
+        print("As duas strings são de tamanhos diferentes.")
+    else:
+        print("São iguais")
+    if s1 != s2:
+        print("As duas strings possuem conteúdo diferente.")
+    else:
+        print("São iguais")
