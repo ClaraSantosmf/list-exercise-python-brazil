@@ -54,7 +54,7 @@ def calcular_baixinhos_com_mais_de_13_anos(*alunos):
         print(f'Existe(m) {contador} aluno(s) com altura abaixo da média com mais de 13 anos:')
     else:
         print("Não há nenhum aluno abaixo da média")
-    for nome, idade, altura in alunos:
+    for i, (nome, idade, altura) in enumerate(alunos):
         if idade > 13:
             if altura < media_de_altura:
                 print(f'{classificador}. {nome}, com {altura} centímetros e {idade} ano(s) de idade')
